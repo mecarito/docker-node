@@ -7,7 +7,7 @@ COPY  . .
 RUN  npm run build
 CMD [ "npm","run","start:prod" ]
 
-FROM nginx
-COPY --from=build /app/dist /usr/share/nginx/html
+# FROM nginx
+# COPY --from=build /app/dist /usr/share/nginx/html
 
 
