@@ -34,6 +34,6 @@ export class AppService {
     // Kittens.find({ name: /^fluff/ });
 
     // const Kitten = mongoose.model('Kitten', kittySchema);
-    return ' I love programming';
+    return 'Hello World!';
   }
 }
