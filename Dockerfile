@@ -8,6 +8,6 @@ RUN  npm run build
 CMD [ "npm","run","start:prod" ]
 
 FROM nginx
-COPY --from=build /dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 
