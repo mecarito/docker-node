@@ -5,5 +5,7 @@ services:
 before_install:
   - docker build -t dockernode .
 
+language: generic
+
 script:
   - docker run dockernode npm run test:cov
